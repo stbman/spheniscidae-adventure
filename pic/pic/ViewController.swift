@@ -9,6 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imgView: UIImageView!
+    
+    @IBAction func click(sender: AnyObject) {
+        let image = imgView.image
+        let edge = TestOpenCV.DetectEdgeWithImage(image)
+        imgView.image = edge as UIImage
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

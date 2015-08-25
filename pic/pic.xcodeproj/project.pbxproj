@@ -25,6 +25,7 @@
 		B4FBAE581B8C3596009AB437 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FBAE571B8C3596009AB437 /* Foundation.framework */; };
 		B4FBAE5A1B8C359C009AB437 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FBAE591B8C359C009AB437 /* AudioToolbox.framework */; };
 		B4FBAE5D1B8C3665009AB437 /* TestOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4FBAE5C1B8C3665009AB437 /* TestOpenCV.mm */; };
+		B4FD67481B8C4B3900F76F25 /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FD67471B8C4B3900F76F25 /* ghost.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B4FBAE591B8C359C009AB437 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B4FBAE5B1B8C3665009AB437 /* pic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pic-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4FBAE5C1B8C3665009AB437 /* TestOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestOpenCV.mm; sourceTree = "<group>"; };
+		B4FD67471B8C4B3900F76F25 /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
 		C3683EE03405E777A0D4A2B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 		B457465E1B8BF25500218DAA /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				B4FD67471B8C4B3900F76F25 /* ghost.png */,
 				B457465F1B8BF25500218DAA /* AppDelegate.swift */,
 				B45746611B8BF25500218DAA /* ViewController.swift */,
 				B45746631B8BF25500218DAA /* Main.storyboard */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B457466A1B8BF25500218DAA /* LaunchScreen.storyboard in Resources */,
+				B4FD67481B8C4B3900F76F25 /* ghost.png in Resources */,
 				B45746671B8BF25500218DAA /* Assets.xcassets in Resources */,
 				B45746651B8BF25500218DAA /* Main.storyboard in Resources */,
 			);
