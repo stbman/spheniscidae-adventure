@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import Photos
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var imgView: UIImageView!
@@ -39,9 +41,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func saveImg(sender: AnyObject) {
-
-    }
+        var imageToSave = imgView.image
+        
+        UIImageWriteToSavedPhotosAlbum(imageToSave!, nil, nil, nil)
     
+    }
+
     func convertUIImageToCGImage(inputImage: UIImage) -> CGImage {
         let ciImage = CIImage(image: inputImage)
         let context = CIContext(options: nil)
