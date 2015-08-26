@@ -16,19 +16,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-je-qJw">
-                                <rect key="frame" x="101" y="39" width="375" height="382"/>
-                                <color key="backgroundColor" red="1" green="0.27604222150000002" blue="0.21208073250000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqj-GL-qZf">
                                 <rect key="frame" x="265" y="451" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Edge OpenCV"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="165" y="406" width="97" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="us8-vt-zv3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-je-qJw">
+                                <rect key="frame" x="101" y="39" width="375" height="382"/>
+                                <color key="backgroundColor" red="1" green="0.27604222150000002" blue="0.21208073250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="53" width="261" height="311"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIy-Mg-GiG">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Save Image"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="485" width="79" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ze-q1-69Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf0-bB-OnS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Manipulate Pixels"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="143" y="444" width="119" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="manipulatePixels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85R-Kp-QLt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PIy-Mg-GiG"/>
+                                <exclude reference="yf0-bB-OnS"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PIy-Mg-GiG"/>
+                                <include reference="yf0-bB-OnS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imgView" destination="CaW-je-qJw" id="7Ie-aH-lKK"/>
@@ -36,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="305"/>
+            <point key="canvasLocation" x="244.5" y="305"/>
         </scene>
     </scenes>
     <resources>
